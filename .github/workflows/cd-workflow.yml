@@ -59,7 +59,7 @@ jobs:
           name: webpack artifacts
           path: public
       - name: Build container image
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@v1
         with:
           username: ${{github.actor}}
           password: ${{secrets.GITHUB_TOKEN}}
